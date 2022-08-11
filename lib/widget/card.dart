@@ -59,7 +59,7 @@ class CardItem extends StatelessWidget {
                     ),
                   ],
                 ),
-                Icon(Icons.heart_broken)
+                Icon(Icons.favorite_outline)
               ],
             ),
           ),

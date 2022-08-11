@@ -7,6 +7,8 @@ import 'package:online_site/screen/message_screen.dart';
 import 'package:online_site/screen/profile_screen.dart';
 import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 
+import 'screen/chat_screen.dart';
+
 class BottomBarScreen extends StatefulWidget {
   const BottomBarScreen({Key? key}) : super(key: key);
 
@@ -15,7 +17,7 @@ class BottomBarScreen extends StatefulWidget {
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  PageController controller = PageController(initialPage: 0);
+  PageController controller = PageController(initialPage: 2);
   var selected = 0;
   @override
   void dispose() {
@@ -32,7 +34,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         children: [
           const HomePage(),
           MessageScreen(),
-          FavoriteScreen(),
+          ChateScreen(),
           ProfileScreen(),
         ],
       ),
@@ -55,11 +57,11 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
               title: Text('Messenge')),
           AnimatedBarItems(
               icon: Icon(
-                Icons.favorite,
+                Icons.chat,
               ),
               selectedColor: Colors.deepPurple,
               backgroundColor: Colors.amber,
-              title: Text('Favorite')),
+              title: Text('Chat')),
           AnimatedBarItems(
               icon: Icon(
                 Icons.person,
