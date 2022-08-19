@@ -15,6 +15,18 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![appui](preview/home.png)
-![appui](preview/list.png)
-![appui](preview/chat.png)
+
+<table align = center>
+  <tr>
+    <td>
+          <img src="preview/home.png" width="300" height="650" />  
+  </td>
+      <td>
+            <img src="preview/list.png" width="300" height="650" />
+  </td>
+ <td>
+            <img src="preview/chat.png" width="300" height="650" />
+  </td>
+ 
+  </tr>
+    </table>
